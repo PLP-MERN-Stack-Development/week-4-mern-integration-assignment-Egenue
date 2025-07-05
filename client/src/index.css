@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light background to complement scheme */
+  color: #4a5568; /* Gray for text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.prose {
+  max-width: 65ch;
+  color: #4a5568;
+}
+
+h1, h2, h3 {
+  color: #2b6cb0; /* Blue for headings */
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-semibold transition duration-300;
+}
+
+.btn-primary {
+  @apply bg-2b6cb0 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-4a5568 hover:bg-gray-300;
+}
+
+.btn-danger {
+  @apply bg-6b46c1 text-white hover:bg-purple-700;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
